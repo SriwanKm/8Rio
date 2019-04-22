@@ -1,0 +1,79 @@
+html{
+    height: 100vh;
+    overflow: hidden;
+    
+}
+a {
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+section {
+    scroll-snap-align: start;
+    height: 100vh;
+    background-image: url("./imgs/bg-index.jpg");
+
+}
+
+.container {
+    height: 100vh;
+    scroll-snap-type: proximity;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+   
+
+}
+
+.bg-nav {
+    z-index: 100;
+    width: 100vw;
+    height: 117px;
+    background-color: #1D0C0B;
+    opacity: .85;
+    position: fixed;
+    font-family: "Gill Sans";
+    font-size: 18px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#home {
+   
+}
+
+#about {
+
+
+}
+
+
+#map {
+}
+#contact {
+
+}
+
+
+.home-link {
+  padding: 45 0 0 250;  
+}
+.about-link {
+  padding: 45 0 0 0;
+}
+
+.map-link {
+  padding: 45 0 0 0;
+  
+}
+.contact-link {
+  padding: 45 250 0 0;
+
+}
+

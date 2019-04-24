@@ -1,25 +1,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="index.js"></script>
+    <script src="./index.js"></script>
+    <meta description>
+    <link rel="icon" href="./imgs/favicon.ico" type="image/x-icon" />
     <title>Paet Rio</title>
 </head>
 <body>
     <div class="container">
         <nav class="bg-nav">
             <a class="home-link" href="#home">HOME</a>
-            <a class="about-link" href="#about">ABOUT US</a>
+            <a class="order-link"
+                href="https://www.grubhub.com/restaurant/8-paet-rio-8110-broadway-elmhurst/335902?orderMethod=delivery&locationMode=DELIVERY&facetSet=umamiV2&pageSize=20&hideHateos=true&searchMetrics=true&queryText=8%20Paet%20Rio&latitude=40.74308013&longitude=-73.88370514&facet=open_now%3Atrue&variationId=0.5-new-gotos&fieldSet=restaurant&sortSetId=umamiV2&sponsoredSize=3&countOmittingTimes=true&whenFor=2019-04-24T16%3A15%3A00.000Z&isFutureOrder=true">ORDER</a>
+            <a class="about-link" href="#about">ABOUT</a>
             <a class="map-link" href="#map">MAP</a>
-            <a class="contact-link" href="#contact">CONTACT US</a>
+            <a class="contact-link" href="#contact">CONTACT</a>
+            <div class="social-links">
+                <div class="ig-fb-links">
+                    <a class="ig-link" href="https://www.instagram.com/paet_rio/"><img class="ig" src="./imgs/ig.svg"
+                            alt="ig"></a>
+                    <a class="fb-link"
+                        href="https://www.facebook.com/8PAET-RIO-Authentic-Thai-Homey-Cuisine-799107653523424/"><img
+                            class="fb" src="./imgs/fb.svg" alt="phone"></a>
+                </div>
+                <a href="tel:9178326672"><span class="phone-number"><img class="phone-link" src="./imgs/phone.svg"alt="ig">917 832 6672</span></a>
+            </div>
         </nav>
-        <section id="home" ></section>
-        <section id="about"></section>
-        <section id="map"></section>
-        <section id="contact"></section>
+        <section id="home" >
+            <div class="overlay-container">
+                <div class="call-to-action">
+                    <img class="logo-link" src="./imgs/8-rio.svg" alt="logo">
+                    <div class="call">
+                        <a class="see-menu-link"
+                            href="https://menupages.com/8-paet-rio/8110-broadway-elmhurst#menu"><img
+                                class="see-menu-link" src="./imgs/see-menu.svg"
+                                alt="see-menu"></a>
+                        <a class="order-now-link"
+                            href="https://www.grubhub.com/restaurant/8-paet-rio-8110-broadway-elmhurst/335902?orderMethod=delivery&locationMode=DELIVERY&facetSet=umamiV2&pageSize=20&hideHateos=true&searchMetrics=true&queryText=8%20Paet%20Rio&latitude=40.74308013&longitude=-73.88370514&facet=open_now%3Atrue&variationId=0.5-new-gotos&fieldSet=restaurant&sortSetId=umamiV2&sponsoredSize=3&countOmittingTimes=true&whenFor=2019-04-24T16%3A15%3A00.000Z&isFutureOrder=true"><img
+                                class="order-now-link" src="./imgs/order-now.svg"
+                                alt="order-here"></a>
+                        <img class="scroll" src="./imgs/scroll.svg" alt="scroll">
+                    </div>
+                </div>
+                <div class="bg-home">
+                    <nav class="video-overlay">
+                    </nav>
+                </div>
+            </div>
+            
+            <video class="video" preload autoplay loop>
+                <source src="./imgs/movie.mp4" type="video/mp4">
+            </video>
+            
+            </section>
+            <section id="about">
+            <div class="kaosoi-container"><img class="kaosoi" src="./imgs/kaosoi.svg" alt="kaosoi">
+                <img class="michelin-content" src="./imgs/group-about.svg" alt="about-content">
+            </div>
+        </section>
+        <section id="map">
+            <div class="logo-panang-container">
+                <!-- <img class="tomyum" src="./imgs/tomyum.svg" alt="tomyum"> -->
+                <!-- <img class="panang" src="./imgs/panang.svg" alt="panang"> -->
+                <img class="all-curry" src="./imgs/all-food.png" alt="all-curry">
+            </div>
+            <div class="curry-scroll-container">
+                <!-- <img class="green" src="./imgs/green.svg" alt="green"> -->
+                <!-- <img class="rice" src="./imgs/rice.svg" alt="rice"> -->
+            </div>
+            <div class="mapbox">
+            <div class="bg-map" ></div>
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=paet%20rios&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact-container"><img class="food-set" src="./imgs/food-set.svg" alt="food-set">
+                   <img class="contact-detail" src="./imgs/contact-detail.svg" alt="contact-detail">
+            </div>
+        </section>
     </div>
-</body>
+    </body>
 </html>
